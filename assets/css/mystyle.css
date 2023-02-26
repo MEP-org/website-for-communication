@@ -1,0 +1,50 @@
+/*---------------------------------- CUSTOM CSS ----------------------------------*/
+
+.mycard-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: white;
+    transition: all ease-in-out 0.3s;
+  }
+  
+.mycard-content h4 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.mycard-content p {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.mycard-date {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    margin-left: 1rem;
+    color: white;
+    font-weight: 600;
+}
+  
+.mycard-download {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 1rem;
+    margin: 1rem;
+    cursor: pointer;
+    background-color: white;
+    border-color: white;
+    border-radius: 10%;
+    border: 1px solid white;
+}
+
+.mycard-download:hover {
+    background-color: var(--main-color);
+    transition: 0.3s;
+    color: white;
+}
