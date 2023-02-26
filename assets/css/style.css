@@ -679,36 +679,38 @@ section {
 .portfolio .portfolio-wrap {
   transition: 0.3s;
   position: relative;
-  overflow: hidden;
   border-radius: 8px;
   z-index: 1;
 }
 
-.portfolio .portfolio-wrap::before {
-  content: "";
-  background: rgba(122, 105, 96, 0.6);
-  position: absolute;
-  left: 100%;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  transition: all ease-in-out 0.3s;
-  z-index: 2;
-}
-
-.portfolio .portfolio-wrap img {
+.portfolio .portfolio-wrap .blue-card {
   transition: 0.3s;
   position: relative;
   z-index: 1;
+  position: relative; 
+  max-width: 100%; 
+  height: 320px; 
+  background-color: var(--main-color); 
+  border-radius: 2%;
+}
+
+.portfolio .portfolio-wrap .disable-card {
+  transition: 0.3s;
+  position: relative;
+  z-index: 3;
+  position: relative; 
+  max-width: 100%; 
+  height: 320px; 
+  background-color: #aaaaaa; 
+  border-radius: 2%;
 }
 
 .portfolio .portfolio-wrap .portfolio-links {
-  opacity: 0;
   left: 0;
   right: 0;
-  top: calc(50% - 32px);
+  top: calc(50% - 16px);
   text-align: center;
-  z-index: 3;
+  z-index: 1;
   position: absolute;
   transition: all ease-in-out 0.3s;
 }
@@ -739,13 +741,12 @@ section {
 }
 
 .portfolio .portfolio-wrap .portfolio-info {
-  opacity: 0;
   position: absolute;
-  bottom: -20px;
+  bottom: 0px;
   left: 0;
   right: 0;
   text-align: center;
-  z-index: 3;
+  z-index: 1;
   transition: all ease-in-out 0.3s;
 }
 
@@ -775,70 +776,6 @@ section {
   bottom: 0;
 }
 
-/*--------------------------------------------------------------
-# Portfolio Details
---------------------------------------------------------------*/
-.portfolio-details {
-  padding-top: 40px;
-}
-
-.portfolio-details .portfolio-details-slider img {
-  width: 100%;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: #fff;
-  opacity: 1;
-  border: 1px solid var(--main-color);
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--main-color);
-}
-
-.portfolio-details .portfolio-info {
-  padding: 30px;
-  box-shadow: 0px 0 30px rgba(122, 105, 96, 0.08);
-}
-
-.portfolio-details .portfolio-info h3 {
-  font-size: 22px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #eee;
-}
-
-.portfolio-details .portfolio-info ul {
-  list-style: none;
-  padding: 0;
-  font-size: 15px;
-}
-
-.portfolio-details .portfolio-info ul li+li {
-  margin-top: 10px;
-}
-
-.portfolio-details .portfolio-description {
-  padding-top: 30px;
-}
-
-.portfolio-details .portfolio-description h2 {
-  font-size: 26px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.portfolio-details .portfolio-description p {
-  padding: 0;
-}
 
 /*--------------------------------------------------------------
 # F.A.Q
@@ -934,7 +871,7 @@ section {
 
 .team .member .member-info-content {
   position: absolute;
-  left: 50px;
+  left: 10px;
   right: 0;
   bottom: 0;
   transition: bottom 0.4s;
@@ -954,48 +891,17 @@ section {
   color: #fff;
 }
 
-.team .member .social {
-  position: absolute;
-  left: -50px;
-  top: 0;
-  bottom: 0;
-  width: 50px;
-  transition: left ease-in-out 0.3s;
-  background: rgba(78, 64, 57, 0.6);
-  text-align: center;
-}
-
-.team .member .social a {
-  transition: color 0.3s;
-  display: block;
-  color: #fff;
-  margin-top: 15px;
-}
-
-.team .member .social a:hover {
-  color: var(--main-color);
-}
-
-.team .member .social i {
-  font-size: 18px;
-  margin: 0 2px;
-}
-
-.team .member:hover .member-info {
-  background: linear-gradient(0deg, rgba(78, 64, 57, 0.95) 0%, rgba(78, 64, 57, 0.95) 15%, rgba(255, 255, 255, 0) 100%);
+.team .member .member-info {
+  background: linear-gradient(0deg, rgba(73, 98, 108, 0.95) 0%, rgba(73, 98, 108, 0.95) 10%, rgba(255, 255, 255, 0) 100%);
   opacity: 1;
   transition: 0.4s;
 }
 
-.team .member:hover .member-info-content {
+.team .member .member-info-content {
   bottom: 30px;
   transition: bottom 0.4s;
 }
 
-.team .member:hover .social {
-  left: 0;
-  transition: left ease-in-out 0.3s;
-}
 
 /*--------------------------------------------------------------
 # Contact Us
