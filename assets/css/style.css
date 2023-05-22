@@ -376,8 +376,8 @@ h6,
 
 #hero .btn-get-started {
   font-family: "Raleway", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
+  /* font-weight: 500;
+  font-size: 16px; */
   letter-spacing: 1px;
   display: inline-block;
   padding: 8px 28px;

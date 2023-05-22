@@ -48,3 +48,10 @@
     transition: 0.3s;
     color: white;
 }
+
+.big-button {
+    width: 460px;
+    height: 80px;
+    font-weight: 500;
+    font-size: 36px;
+}
