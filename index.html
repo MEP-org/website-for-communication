@@ -100,7 +100,8 @@
           </div>
         </div>
         <div class="col-lg-6 order-1 order-lg-2 hero-img">
-          <img src="assets/img/robot.png" class="img-fluid animated" alt="">
+          <img src="assets/img/robot.png" class="img-fluid animated" alt="" id="surprise1" onclick="surprise()">
+          <img src="assets/img/QRcode.png" class="img" alt="" id="surprise2" style="display: none;" onclick="surprise()">
         </div>
       </div>
     </div>
@@ -329,7 +330,7 @@
                   <p>usability form to test <b>teacher</b> workflow</p>
                 </div>
                 <div class="mycard-date">
-                  <p>2023-04-12</p>
+                  <p>2023-05-19</p>
                 </div>
                 <a class="mycard-download" href="https://forms.office.com/pages/responsepage.aspx?id=rloCwbmYIUC0tsIBIUuITgDs6HJIOZRMpxSqMHbTBj5UNlFBS0E4RlZWTU4zTzZLRjg2NEo3QURZVS4u">
                   <i class="bi bi-download"></i>
@@ -346,7 +347,7 @@
                   <p>usability form to test <b>student</b> workflow</p>
                 </div>
                 <div class="mycard-date">
-                  <p>2023-04-12</p>
+                  <p>2023-05-19</p>
                 </div>
                 <a class="mycard-download" href="https://forms.office.com/pages/responsepage.aspx?id=rloCwbmYIUC0tsIBIUuITgDs6HJIOZRMpxSqMHbTBj5UMUtJWTJNNTY5MjhMT0xCSVU2UEFVREQzTi4u">
                   <i class="bi bi-download"></i>
@@ -357,30 +358,51 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-others">
             <div class="portfolio-wrap">
-              <div class="disable-card">
+              <div class="blue-card">
                 <div class="mycard-content">
-                  <h4>Not available</h4>
+                  <h4>Poster</h4>
+                  <p>A way of "selling" our product at students@DETI</p>
                 </div>
+                <div class="mycard-date">
+                  <p>2023-05-30</p>
+                </div>
+                <a class="mycard-download" href="M4/poster-1.pdf" download="">
+                  <i class="bi bi-download"></i>
+                </a>
               </div>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-others">
             <div class="portfolio-wrap">
-              <div class="disable-card">
+              <div class="blue-card">
                 <div class="mycard-content">
-                  <h4>Not available</h4>
+                  <h4>Abstract</h4>
+                  <p>IEEE abstract format</p>
                 </div>
+                <div class="mycard-date">
+                  <p>2023-05-30</p>
+                </div>
+                <a class="mycard-download" href="M4/abstract.pdf" download="">
+                  <i class="bi bi-download"></i>
+                </a>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-others">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-pdf">
             <div class="portfolio-wrap">
-              <div class="disable-card">
+              <div class="blue-card">
                 <div class="mycard-content">
-                  <h4>Not available</h4>
+                  <h4>Report</h4>
+                  <p style="margin-left: 40px;">Final Report with all the work developed thoughout the project</p>
                 </div>
+                <div class="mycard-date">
+                  <p>2023-05-30</p>
+                </div>
+                <a class="mycard-download" href="M4/report.pdf" download="">
+                  <i class="bi bi-download"></i>
+                </a>
               </div>
             </div>
           </div>
@@ -547,6 +569,20 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+    function surprise() {
+      var robot = document.getElementById("surprise1");
+      var qrcode = document.getElementById("surprise2");
+      if(qrcode.style.display === "none") {
+        qrcode.style.display = "block";
+        robot.style.display = "none";
+      } else {
+        qrcode.style.display = "none";
+        robot.style.display = "block";
+      }
+    }
+  </script>
 
 </body>
 
